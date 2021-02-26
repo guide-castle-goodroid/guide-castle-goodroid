@@ -1,19 +1,19 @@
 ## 城崩しオンライン攻略サイト
-- - -
+
 ### 概要
 [城崩しオンライン](https://castle0.goodroid.co.jp/)というスマホゲームの攻略サイトです。
-- - -
+
 ### 企画
 RomanGames(どんぐり君)が企画しました。<br>
 Github: [RomanGames](https://github.com/RomanGames)<br>
 Twitter: [どんぐり君](https://twitter.com/Programmer___)<br>
 Discord: RomanGames#4543
-- - -
+
 ### 連絡
 上記のTwitter,Discordまたは<br>
 [城崩し攻略サイトTwitterアカウント](https://twitter.com/SiroKuzusiGuide)<br>
 にDMをお願いします。
-- - -
+
 ### 制作チーム
 <br>
 <u>**メンバー**</u><br>
