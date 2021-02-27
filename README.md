@@ -4,8 +4,10 @@
 
 ## 概要
 
-[城崩しオンライン](https://castle0.goodroid.co.jp/)というスマホゲームの攻略サイトです。
-
+[城崩しオンライン](http://castle0.goodroid.co.jp/)というスマホゲームの攻略サイトです。<br>
+ここはサイトの中身ですので、<br>
+サイトが見たい方はこちらへどうぞ<br>
+[guide-castle-goodroid.github.io](https://guide-castle-goodroid.github.io/)
 
 
 ## 企画
