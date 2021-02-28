@@ -4,6 +4,7 @@
 
 ## 概要
 
+<span style="font-size: x-large; font-weight: bolder; text-decoration: underline; color: red; ">このサイトは製作中です！</span><br>
 [城崩しオンライン](http://castle0.goodroid.co.jp/)というスマホゲームの攻略サイトです。<br>
 ここはサイトの中身ですので、<br>
 サイトが見たい方はこちらへどうぞ<br>
