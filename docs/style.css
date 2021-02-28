@@ -1,1 +1,12 @@
 /* style.css in guide-castle-goodroid */
+
+
+/* utility */
+
+.hide {
+  display: none;
+}
+
+.visible {
+  visibility: hidden;
+}
