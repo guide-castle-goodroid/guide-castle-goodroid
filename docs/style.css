@@ -10,8 +10,11 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  background: var(--header-bg) no-repeat center;
-  background-size: cover;
+  z-index: 8;
+}
+
+.header-image {
+  position: absolute;
 }
 
 /* utility */
