@@ -15,6 +15,7 @@ header {
 
 .header-image {
   position: absolute;
+  width: 100%;
 }
 
 /* utility */
