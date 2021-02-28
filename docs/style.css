@@ -10,7 +10,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  background: url(var(--header-bg-url)) no-repeat center;
+  background: var(--header-bg) no-repeat center;
   background-size: cover;
 }
 
