@@ -1,8 +1,15 @@
 /* style.css in guide-castle-goodroid */
 
+* {
+  position: relative;
+}
+
 /* header */
 
 header {
+  position: fixed;
+  width: 100%;
+  top: 0;
   background-size: cover;
 }
 
