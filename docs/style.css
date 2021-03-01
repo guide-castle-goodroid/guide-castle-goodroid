@@ -16,19 +16,17 @@ header {
 .header-image {
   position: absolute;
   width: 100%;
-  opacity: 0.1;
   filter: blur(0);
 }
 .header-image::after {
   content: "";
   position: absolute;
   display: block;
+  width: 100%;
   top: 0;
-  right: 0;
-  buttom: 0;
-  left: 0;
-  opacity: 0.9;
-  background-color: yellow;
+  bottom: 0;
+  opacity: 0.5;
+  background-color: white;
 }
 
 /* utility */
