@@ -19,6 +19,7 @@ header {
   width: 100%;
 }
 .header-image::after {
+  content: "";
   position: absolute;
   display: block;
   width: 100%;
