@@ -18,6 +18,14 @@ header {
   position: absolute;
   width: 100%;
 }
+.header-image::after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  buttom: 0;
+  opacity: 0.5;
+  background-color: white;
+}
 
 /* utility */
 
