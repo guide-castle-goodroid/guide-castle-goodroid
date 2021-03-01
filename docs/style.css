@@ -16,6 +16,7 @@ header {
 .header-image {
   position: absolute;
   width: 100%;
+  opacity: 0.1;
   filter: blur(0);
 }
 .header-image::after {
