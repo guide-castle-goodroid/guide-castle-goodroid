@@ -11,12 +11,12 @@ header {
   z-index: 8;
   width: 100%;
   top: 0;
-  filter: blur(0);
 }
 
 .header-image {
   position: absolute;
   width: 100%;
+  filter: blur(0);
 }
 .header-image::after {
   content: "";
