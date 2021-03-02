@@ -1,16 +1,19 @@
 /* script.js in guide-castle-goodroid */
 
-let headerImgDiv;
-let headerImgHeight;
-
-window.onload = () => {
-  headerImgDiv = document.getElementById("header-background");
-  headerImgHeight = headerImgDiv.clientHeight;
-}
-
+// support css
 let onScrollOrResize_ticking = false;
 function onScrollOrResize(scroll) {
-  //if (scroll < )
+
+  // header
+  const headerImgDiv = document.getElementById("header-background");
+  const headerMainDiv = document.getElementById("header-main");
+  const headerImgHeight = headerImgDiv.clientHeight;
+  const headerMainHeight = headerMainDiv.clientHeight;
+  const headerHeightDifference = headerImgHeight - headerMainHeight;
+  if (scroll < headerHeightDifference) {
+    headerImgDiv.style.top = Math.max(-scroll, -headerHeightDifference);
+  }
+
   onScrollOrResize_ticking = false;
 }
 
