@@ -7,12 +7,10 @@ function onScrollOrResize(scroll) {
   // header
   const headerImgDiv = document.getElementById("header-background");
   const headerMainDiv = document.getElementById("header-main");
-  const headerImgHeight = headerImgDiv.clientHeight;
-  const headerMainHeight = headerMainDiv.clientHeight;
-  const headerHeightDifference = headerImgHeight - headerMainHeight;
-  //if (scroll < headerHeightDifference) {
-    headerImgDiv.style.top = Math.max(-scroll, -headerHeightDifference);
-  //}
+  const headerHeightDifference = headerImgDiv.clientHeight - headerMainDiv.clientHeight;
+  if (scroll < headerHeightDifference) {
+    headerImgDiv.style.top = `${Math.max(-scroll, -headerHeightDifference)}`;
+  }
 
   onScrollOrResize_ticking = false;
 }
