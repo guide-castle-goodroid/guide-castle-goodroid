@@ -53,10 +53,10 @@ main #main-header-space img {
 
 /* utility */
 
-.hide {
+.none {
   display: none;
 }
 
-.visible {
+.hide {
   visibility: hidden;
 }
