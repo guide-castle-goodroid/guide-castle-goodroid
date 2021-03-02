@@ -20,12 +20,12 @@ header {
 header .header-background {
   position: absolute;
 }
-header .header-background img {
+header #header-background img {
   width: 100%;
   object-fit: cover;
   filter: blur(0);
 }
-header .header-background::after {
+header #header-background::after {
   content: "";
   position: absolute;
   display: block;
@@ -36,7 +36,7 @@ header .header-background::after {
   background-color: white;
 }
 
-header .main {
+header #header-main {
   height: 32px;
 }
 
