@@ -3,8 +3,7 @@
 let headerImgDiv;
 
 window.onload = () => {
-  headerImgDiv = document.getElementsByClassName("header-image")[0];
-  console.log(`header's image's height is ${headerImgHeight}`);
+  headerImgDiv = document.getElementById("header-background");
 }
 
 let onScrollOrResize_ticking = false;
