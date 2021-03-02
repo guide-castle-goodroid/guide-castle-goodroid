@@ -1,14 +1,15 @@
 /* script.js in guide-castle-goodroid */
 
 let headerImgDiv;
+let headerImgHeight;
 
 window.onload = () => {
   headerImgDiv = document.getElementById("header-background");
+  headerImgHeight = headerImgDiv.clientHeight;
 }
 
 let onScrollOrResize_ticking = false;
 function onScrollOrResize(scroll) {
-  const headerImgHeight = headerImgDiv.clientHeight;
   //if (scroll < )
   onScrollOrResize_ticking = false;
 }
