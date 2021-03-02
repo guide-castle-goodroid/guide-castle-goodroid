@@ -1,28 +1,37 @@
 /* script.js in guide-castle-goodroid */
 
 let headerImgDiv;
-let headerImgHeight;
 
 window.onload = () => {
   headerImgDiv = document.getElementsByClassName("header-image")[0];
-  headerImgHeight = headerImgDiv.clientHeight;
   console.log(`header's image's height is ${headerImgHeight}`);
 }
 
-function onScroll(scroll) {
-  console.log(`scroll now at ${scroll}!`);
+let onScrollOrResize_ticking = false;
+function onScrollOrResize(scroll) {
+  const headerImgHeight = headerImgDiv.clientHeight;
+  //if (scroll < )
+  onScrollOrResize_ticking = false;
 }
 
 // scroll event
 let onScroll_lastScrollPos = 0;
-let onScroll_ticking = false;
-window.addEventListener('scroll', function(e) {
+window.addEventListener("scroll", e => {
   onScroll_lastScrollPos = window.scrollY;
-  if (!onScroll_ticking) {
+  if (!onScrollOrResize_ticking) {
     window.requestAnimationFrame(() => {
-      onScroll(onScroll_lastScrollPos);
-      onScroll_ticking = false;
+      onScrollOrResize(onScroll_lastScrollPos);
     });
-    onScroll_ticking = true;
+    onScrollOrResize_ticking = true;
+  }
+});
+
+// resize event
+window.addEventListener("resize", e => {
+  if (!onScrollOrResize_ticking) {
+    window.requestAnimationFrame(() => {
+      onScrollOrResize(onScroll_lastScrollPos);
+    });
+    onScrollOrResize_ticking = true;
   }
 });
