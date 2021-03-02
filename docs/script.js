@@ -5,11 +5,15 @@ let onScrollOrResize_ticking = false;
 function onScrollOrResize(scroll) {
 
   // header
-  const headerImgDiv = document.getElementById("header-background");
-  const headerMainDiv = document.getElementById("header-main");
-  const headerHeightDifference = headerImgDiv.clientHeight - headerMainDiv.clientHeight;
-  if (scroll < headerHeightDifference) {
-    headerImgDiv.style.top = `${Math.max(-scroll, -headerHeightDifference)}`;
+  try {
+    const headerImgDiv = document.getElementById("header-background");
+    const headerMainDiv = document.getElementById("header-main");
+    const headerHeightDifference = headerImgDiv.clientHeight - headerMainDiv.clientHeight;
+    if (scroll < headerHeightDifference) {
+      headerImgDiv.style.top = `${Math.max(-scroll, -headerHeightDifference)}`;
+    }
+  } catch (e) {
+    console.log(e.message);
   }
 
   onScrollOrResize_ticking = false;
