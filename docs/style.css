@@ -40,6 +40,15 @@ header #header-main {
   height: 32px;
 }
 
+/* main */
+
+main #main-header-space {
+  opacity: 0.0;
+}
+main #main-header-space img {
+  width: 100%;
+}
+
 /* utility */
 
 .hide {
