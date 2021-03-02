@@ -11,45 +11,55 @@
 /* header */
 
 header {
-  position: fixed;
   z-index: 8;
-  width: 100%;
-  top: 0;
 }
 
-#header-background {
-  position: absolute;
-}
-#header-background img {
+.header-scroll-background img {
   width: 100%;
-  filter: blur(0);
+  filter: blur(0.0);
 }
-#header-background::after {
+.header-scroll-background::after {
   content: "";
   position: absolute;
   display: block;
   width: 100%;
-  top: 0;
-  bottom: 0;
+  height: 100%;
   opacity: 0.0;
   background-color: white;
 }
 
-#header-main {
-  height: 32px;
+#header-fixed {
+  position: fixed;
+  width: 100%;
+  height: 64px;
 }
+
+.header-fixed-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.header-fixed-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+.header-fixed-background::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: white;
+}
+
 .header-title {
   opacity: 0.0;
 }
 
 /* main */
-
-main #main-header-space {
-  opacity: 0.0;
-}
-main #main-header-space img {
-  width: 100%;
-}
 
 /* utility */
 
