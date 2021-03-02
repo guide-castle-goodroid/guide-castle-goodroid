@@ -3,6 +3,7 @@
 // support css
 let onScrollOrResize_ticking = false;
 function onScrollOrResize(scroll) {
+  console.log(`scroll is ${scroll}`);
 
   // header
   try {
