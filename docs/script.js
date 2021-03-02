@@ -10,9 +10,9 @@ function onScrollOrResize(scroll) {
   const headerImgHeight = headerImgDiv.clientHeight;
   const headerMainHeight = headerMainDiv.clientHeight;
   const headerHeightDifference = headerImgHeight - headerMainHeight;
-  if (scroll < headerHeightDifference) {
+  //if (scroll < headerHeightDifference) {
     headerImgDiv.style.top = Math.max(-scroll, -headerHeightDifference);
-  }
+  //}
 
   onScrollOrResize_ticking = false;
 }
