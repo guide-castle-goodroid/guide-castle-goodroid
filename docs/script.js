@@ -10,7 +10,8 @@ function onScrollOrResize(scroll) {
     const headerMainDiv = document.getElementById("header-main");
     const headerHeightDifference = headerImgDiv.clientHeight - headerMainDiv.clientHeight;
     if (scroll < headerHeightDifference) {
-      headerImgDiv.style.top = `${Math.max(-scroll, -headerHeightDifference)}`;
+      headerImgDiv.style.top = `${Math.max(-scroll, -headerHeightDifference)}px`;
+      console.log(`headerImgDiv.style.top = "${Math.max(-scroll, -headerHeightDifference)}px";`);
     }
   } catch (e) {
     console.log(e.message);
