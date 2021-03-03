@@ -6,7 +6,7 @@ function onScrollOrResize(scroll) {
   console.log(`scroll is ${scroll}`);
 
   // header
-  /***/
+  
 
   onScrollOrResize_ticking = false;
 }
