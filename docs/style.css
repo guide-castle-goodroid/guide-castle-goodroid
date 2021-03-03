@@ -10,10 +10,6 @@
 
 /* header */
 
-header {
-  z-index: 8;
-}
-
 .header-scroll-background img {
   width: 100%;
   filter: blur(0.0);
@@ -32,6 +28,7 @@ header {
   position: fixed;
   width: 100%;
   height: 64px;
+  z-index: 8;
 }
 
 .header-fixed-background {
